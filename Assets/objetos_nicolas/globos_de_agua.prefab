@@ -96,10 +96,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7084256964200389541}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2e40324f354daf408251b238e8df031, type: 3}
+  m_Script: {fileID: 11500000, guid: 41d59907f73faa74dbb7212a88074182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 2000
+  velocidad: 1000
   spriteRenderer: {fileID: 441142324257898126}
   MyRigidbody2D: {fileID: 908092081108749025}
 --- !u!50 &908092081108749025

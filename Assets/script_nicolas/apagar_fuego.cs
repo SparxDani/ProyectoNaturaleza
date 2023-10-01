@@ -38,21 +38,21 @@ public class apagar_fuego : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("1");
+        //Debug.Log("1");
         if (collision.CompareTag("agua"))
         {
-            Debug.Log("2");
+            //Debug.Log("2");
             vida_del_fuego--;
         }
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        Debug.Log("1");
+        //Debug.Log("1");
         if (collision.CompareTag("agua"))
         {
             if (collision.GetComponent<globo>().Coliciono == true)
             {
-                Debug.Log("2");
+                //Debug.Log("2");
                 vida_del_fuego-=1;
                 collision.GetComponent<globo>().Coliciono = false;
             }

@@ -15,6 +15,7 @@ public class LanzarAgua : MonoBehaviour
     float cadencia;
 
     [SerializeField] GameObject GloboDeAgua;
+    [SerializeField] GameObject ElMouse;
 
 
     // Start is called before the first frame update
@@ -56,25 +57,30 @@ public class LanzarAgua : MonoBehaviour
         MousePosicion = value.ReadValue<Vector2>();
         MousePosicion = cam.ScreenToWorldPoint(MousePosicion);
         //Debug.Log(MousePosicion);
+        ElMouse.GetComponent<mouse>().MousePosition = MousePosicion;
     }
 
 
     public void lanar_agua(InputAction.CallbackContext value)
     {
-        if(activarAgua == true)
+        if (ElMouse.GetComponent<mouse>().Coliciona_con_boton == false)
         {
-            if (unLanzamiento == true)
+            if (activarAgua == true)
             {
-                float clic = value.ReadValue<float>();
-                if (clic == 1)
+                if (unLanzamiento == true)
                 {
-                    GameObject globo = Instantiate(GloboDeAgua, transform.position, Quaternion.identity);
-                    globo.GetComponent<globo>().Direccion = MousePosicion;
-                    unLanzamiento = false;
-                    cadencia = 0;
+                    float clic = value.ReadValue<float>();
+                    if (clic == 1)
+                    {
+                        GameObject globo = Instantiate(GloboDeAgua, transform.position, Quaternion.identity);
+                        globo.GetComponent<globo>().Direccion = MousePosicion;
+                        unLanzamiento = false;
+                        cadencia = 0;
+                    }
                 }
             }
         }
+        
     }
 
 
