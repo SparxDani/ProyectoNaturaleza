@@ -12,12 +12,18 @@ public class globo : MonoBehaviour
     bool y;
     bool yy;
     bool coliciono = false;
+    bool la_coliciono = false;
 
 
     float duracion=0;
     [SerializeField]SpriteRenderer spriteRenderer;
     [SerializeField]Rigidbody2D MyRigidbody2D;
 
+    public bool Coliciono
+    {
+        get { return la_coliciono; }
+        set { la_coliciono = value; }
+    }
 
     public Vector2 Direccion
     {
@@ -28,6 +34,7 @@ public class globo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        MyRigidbody2D.velocity = new Vector2(direccion.x - transform.position.x, direccion.y - transform.position.y).normalized * velocidad * Time.deltaTime;
         if (transform.position.x < direccion.x)
         {
             x = true;
@@ -44,19 +51,18 @@ public class globo : MonoBehaviour
         {
             y = false;
         }
-        Debug.Log(x);
-        Debug.Log(y);
+        //Debug.Log(x);
+        //Debug.Log(y);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(coliciono);
-        Debug.Log(direccion);
-        Debug.Log(transform.position);
+        //Debug.Log(coliciono);
+        //Debug.Log(direccion);
+        //Debug.Log(transform.position);
         if (coliciono == false)
         {
-            MyRigidbody2D.velocity = new Vector2(direccion.x - transform.position.x, direccion.y - transform.position.y).normalized * velocidad * Time.deltaTime;
             
 
 
@@ -92,7 +98,10 @@ public class globo : MonoBehaviour
             duracion += Time.deltaTime;
 
 
-
+            if(duracion > 3)
+            {
+                Destroy(gameObject);
+            }
 
 
 
@@ -106,6 +115,7 @@ public class globo : MonoBehaviour
     void impacto()
     {
         coliciono = true;
+        la_coliciono = true;
         spriteRenderer.sprite = null;
         MyRigidbody2D.velocity = Vector2.zero;
     }
