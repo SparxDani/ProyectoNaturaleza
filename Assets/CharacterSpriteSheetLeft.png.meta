@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 57955c17022781b4fb9cf05a07f9f17f
+guid: d2f93ef858a2f4c40aefcecb5a2f4d96
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kumatorawalk_0
+      name: CharacterSpriteSheetLeft_0
       rect:
         serializedVersion: 2
-        x: 34
-        y: 102
-        width: 305
-        height: 504
+        x: 90
+        y: 84
+        width: 204
+        height: 452
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0123ed63ea288f74dab4e2f4644424f9
-      internalID: 750782089
+      spriteID: 23bdc233514016c4c85e29f2432f9734
+      internalID: 888192295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kumatorawalk_1
+      name: CharacterSpriteSheetLeft_1
       rect:
         serializedVersion: 2
-        x: 461
-        y: 114
-        width: 308
-        height: 488
+        x: 443
+        y: 88
+        width: 214
+        height: 448
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 586762ab8b576c54f9e69aea81d40f84
-      internalID: 959797354
+      spriteID: 6eafaea296d07274eb62bba029aa2053
+      internalID: 434159859
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kumatorawalk_2
+      name: CharacterSpriteSheetLeft_2
       rect:
         serializedVersion: 2
-        x: 907
-        y: 116
-        width: 308
-        height: 506
+        x: 808
+        y: 82
+        width: 204
+        height: 452
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42423a11d14ac094cbc37a6309786984
-      internalID: 534248549
+      spriteID: f59c64582524fb04bb7e2b24d307a3fd
+      internalID: -539814013
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kumatorawalk_3
+      name: CharacterSpriteSheetLeft_3
       rect:
         serializedVersion: 2
-        x: 1299
-        y: 120
-        width: 308
-        height: 486
+        x: 1090
+        y: 90
+        width: 214
+        height: 446
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc9044321ea29354f9d963b713d53dc3
-      internalID: 1613519162
+      spriteID: a73cea0f3b032b9419ed61e05ed035ff
+      internalID: -826550775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kumatorawalk_4
+      name: CharacterSpriteSheetLeft_4
       rect:
         serializedVersion: 2
-        x: 1690
-        y: 109
-        width: 305
-        height: 506
+        x: 1364
+        y: 94
+        width: 204
+        height: 452
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,8 +221,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a8c1976cd947414f961777a9111b110
-      internalID: -849610461
+      spriteID: f2e741c84834dd748b3c85ea1537a2ce
+      internalID: 1662255350
       vertices: []
       indices: 
       edges: []
@@ -238,11 +238,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      kumatorawalk_0: 750782089
-      kumatorawalk_1: 959797354
-      kumatorawalk_2: 534248549
-      kumatorawalk_3: 1613519162
-      kumatorawalk_4: -849610461
+      CharacterSpriteSheetLeft_0: 888192295
+      CharacterSpriteSheetLeft_1: 434159859
+      CharacterSpriteSheetLeft_2: -539814013
+      CharacterSpriteSheetLeft_3: -826550775
+      CharacterSpriteSheetLeft_4: 1662255350
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
